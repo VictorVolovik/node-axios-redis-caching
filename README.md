@@ -1,9 +1,11 @@
-# Simple Redis cache in Node.js example
+# Simple Redis cache in Node.js using axios-cache-adapter example
 
 ## Prerequisites
 
 Node.js >= 12
+
 NPM >= 6
+
 Redis >= 6
 
 ## Installation
@@ -35,4 +37,6 @@ Visit /repos_number/VictorVolovik
 For force clear cache visit /repos_number/VictorVolovik?clearCache=true
 
 Check reposnse time in DevTools -> Network
+
+Change `debug: false` to `debug: true` in cache setup for cache hit/miss info.
 
