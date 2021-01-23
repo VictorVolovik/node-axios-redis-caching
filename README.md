@@ -12,23 +12,23 @@ Redis >= 6
 
 1. Install dependencies
 
-```bash
-npm install
-```
+   ```bash
+   npm install
+   ```
 
-2. Create `.env` file in the root of the project using `.default_env` as example
+1. Create `.env` file in the root of the project using `.default_env` as example
 
-3. Start project
+1. Start project
 
-```bash
-npm start
-```
+   ```bash
+   npm start
+   ```
 
-for dev mode
+   for dev mode
 
-```bash
-npm run dev
-```
+   ```bash
+   npm run dev
+   ```
 
 ## Usage
 
@@ -39,4 +39,3 @@ For force clear cache visit /repos_number/VictorVolovik?clearCache=true
 Check reposnse time in DevTools -> Network
 
 Change `debug: false` to `debug: true` in cache setup for cache hit/miss info.
-
