@@ -7,6 +7,7 @@ const redis = require("redis");
 dotenv.config();
 
 const PORT = parseInt(process.env.PORT, 10) || 5000;
+const REDIS_HOST = "127.0.0.1"; // localhost
 const REDIS_PORT = parseInt(process.env.REDIS_PORT, 10) || 6379;
 
 const API_GET_GITHUB_USER = username => `https://api.github.com/users/${username}`;
@@ -15,7 +16,7 @@ const CACHE_LIFETIME = 1000 * 60 * 5; // 5 minutes
 const app = express();
 
 const redisClient = redis.createClient({
-  host: "127.0.0.1", // localhost
+  host: REDIS_HOST,
   port: REDIS_PORT
 });
 
